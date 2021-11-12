@@ -4,6 +4,8 @@ const morgan = require("morgan");
 const debug = require('debug')('app');
 const path = require('path');
 
+const config = require('./src/config/config');
+
 const PORT = process.env.PORT || 3000;
 const app = express();
 const sessionsRouter = require('./src/routers/sessionsRouter');
